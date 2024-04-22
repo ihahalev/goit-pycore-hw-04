@@ -29,7 +29,7 @@ def get_all_contacts(contacts: dict) -> str:
     if not len(contacts):
         return "Contacts are empty"
     else:
-        output = "Contacts:\n"
+        output = "Contacts:"
         for name, phone in contacts.items():
-            output += f"{name}: {phone}\n"
+            output += f"\n{name}: {phone}"
         return output

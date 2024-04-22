@@ -19,7 +19,7 @@ def main():
                 case "hello":
                     print("How can I help you?")
                 case "all":
-                    print(get_all_contacts(contacts), end="")
+                    print(get_all_contacts(contacts))
                 case "add":
                     print(add_contact(args, contacts))
                 case "change":
