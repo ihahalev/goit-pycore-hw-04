@@ -1,4 +1,4 @@
-def get_cats_info(path: str) -> tuple[int]:
+def get_cats_info(path: str) -> dict:
     try:
         with open(path, "r", encoding='utf-8') as file:
             records = [record.strip() for record in file.readlines()  if record.strip()]
