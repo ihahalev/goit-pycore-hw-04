@@ -1,4 +1,4 @@
-from colorama import Fore, Style
+from colorama import Fore
 
 print_colors = {
     "dir": Fore.BLUE,
@@ -7,5 +7,4 @@ print_colors = {
 }
 
 def print_out(type: str, line: str):
-    print(print_colors.get(type) + line)
-    print(Style.RESET_ALL, end="")
+    print(f"{print_colors.get(type)}{line}{Fore.RESET}")
